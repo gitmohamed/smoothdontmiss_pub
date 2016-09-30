@@ -299,10 +299,11 @@ footer {
 
 .foot-menu {
   padding:3px;
+  float: right;
 }
 
 footer .foot-brand {
-  float: right;
+  float: left;
   font-size: 120%;
   text-shadow: 0 2px 10px #000;
 }
