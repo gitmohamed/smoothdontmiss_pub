@@ -183,7 +183,7 @@ nav .main-menu li {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
-iframe {
+.youtube {
   width: 100%;
   height: 100vh;
   position: absolute;
@@ -316,4 +316,58 @@ footer .foot-brand {
   float: left;
   font-size: 120%;
   text-shadow: 0 2px 10px #000;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    height: auto;
+    padding: 10px;
+  }
+  .youtube {
+    display: none;
+  }
+  header .book-me {
+    position: relative;
+    display: inline-block;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  header .book-me h1 {
+    text-align: center;
+  }
+  #social {
+    top: 0;
+    width: 100%;
+    right: auto;
+    float: left;
+    padding: 20px 0;
+    position: relative;
+  }
+  #social li {
+    color: white;
+  }
+  header .brand {
+    font-size: 100%;
+    position: relative;
+  }
+  .shadow-clone {
+    display: none;
+  }
+  nav .main-menu {
+    width: auto;
+  }
+  nav .main-menu a {
+    width: 49%;
+    display: inline-block;
+  }
+  nav .main-menu li {
+    text-align: center;
+    width: 100%;
+    margin: 0;
+  }
+  .work .spin-c li {
+    padding: 0;
+    width: 100%;
+  }
 }
