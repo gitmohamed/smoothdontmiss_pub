@@ -107,6 +107,16 @@ header .book-me:hover {
   background: rgba(139, 0, 0, 0.78);
 }
 
+#treaturight {
+  display: block;
+  width: 99vw;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  position: absolute;
+}
+
 #social {
   display: table;
   float: right;
@@ -348,7 +358,7 @@ footer .foot-brand {
     color: white;
   }
   header .brand {
-    font-size: 100%;
+    font-size: 99%;
     position: relative;
   }
   .shadow-clone {
@@ -369,5 +379,12 @@ footer .foot-brand {
   .work .spin-c li {
     padding: 0;
     width: 100%;
+  }
+  
+  footer .foot-brand { 
+    font-size: 99%;
+  }
+  #treaturight {
+    display: none;
   }
 }
