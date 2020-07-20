@@ -18,10 +18,18 @@ $(document).ready(function(){
 
   var scrollHandler = function(e) {
     var top = $(window).scrollTop();
-    $('header').css({'background-position-y': top/10 + 'px'});
+    $('#treaturight').css({'filter': 'blur(' + top/10 + 'px' + ')'});
   }
 
   $(window).scroll(scrollHandler);
 
-
+  $('#muteToggle').on('click', (e) => {
+    var video = document.getElementById("treaturight");
+    video.muted = !video.muted;
+    if ($('#muteToggle').attr('name') != 'volume-high-outline') {
+      $('#muteToggle').attr('name', 'volume-high-outline');
+    } else {
+      $('#muteToggle').attr('name', 'volume-mute-outline');
+    }
+  })
 });

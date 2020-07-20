@@ -20,7 +20,7 @@ a {
 
 small {
   font-size: 100%;
-  color: darkred;
+  color: #3a84b6;
 }
 
 ul {
@@ -89,7 +89,7 @@ header .book-me {
   position: absolute;
   right: 7vw;
   bottom: 36px;
-  background: darkred;
+  background: #1371b1;
   box-shadow: 0 0 60px #040404;
   letter-spacing: 2px;
   font-size: 18px;
@@ -104,7 +104,7 @@ header .book-me:hover {
   will-change: background, transform;
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
-  background: rgba(139, 0, 0, 0.78);
+  background: #8fd2ffbe;
 }
 
 #treaturight {
@@ -113,7 +113,7 @@ header .book-me:hover {
   margin: 0 auto;
   left: 0;
   right: 0;
-  height: 100vh;
+  height: 103vh;
   position: absolute;
 }
 
@@ -148,12 +148,13 @@ header .book-me:hover {
 }
 
 #social a {
-  line-height: 2em;
+  font-size: 16px;
+  line-height: 2rem;
 }
 
-#social i {
-  padding: 10px;
-  font-size: 30px;
+#social ion-icon {
+  padding: 0 10px;
+  font-size: 20px;
   color: whitesmoke !important;
 }
 
@@ -209,11 +210,29 @@ nav .main-menu li:hover {
   transform: translateY(0) scale(1.1);
   -webkit-transform: translateY(0) scale(1.1);
   background: whitesmoke;
-  color: darkred;
+  color: #8fd2ff;
+}
+
+#muteToggle {
+  position: fixed;
+  font-size: 30px;
+  left: 30px;
+  bottom: 30px;
+  cursor: pointer;
+}
+
+#muteToggle:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
 
 .outer-owl {
   width: 500px;
+}
+
+.outer-owl p:first-of-type {
+  text-align: center;
+  font-size: 22px;
 }
 
 #owl-carousel {
@@ -328,7 +347,69 @@ footer .foot-brand {
   text-shadow: 0 2px 10px #000;
 }
 
+iframe {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button-content {
+  width: 77px;
+  display: block;
+  margin: 0 auto;
+}
+
+.button-content .cta-text {
+  height: 33px;
+  padding: 6px 0;
+  display: block;
+  float: right;
+}
+
+.service-image {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.services li {
+  width: 100%;
+}
+
+.services .spotify {
+  border-radius: 5px;
+  background: #3ad06e;
+}
+
+.services .apple {
+  border-radius: 5px;
+  background: #ec3256;
+}
+
+.services .deezer {
+  border-radius: 5px;
+  background: whitesmoke;
+  color: black;
+}
+
+.services .button {
+  display: block;
+  padding: 6px;
+  margin: 0 auto;
+  width: 300px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.services .button:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+}
+
 @media screen and (max-width: 800px) {
+  iframe {
+   width: 100%; 
+  }
   header {
     height: auto;
     padding: 10px;
@@ -346,6 +427,15 @@ footer .foot-brand {
   header .book-me h1 {
     text-align: center;
   }
+  .outer-owl {
+    width: auto;
+  }
+  .outer-owl p:first-of-type {
+    width: 100%;
+    clear: both;
+    text-align: center;
+    font-size: 16px;
+  }
   #social {
     top: 0;
     width: 100%;
@@ -354,12 +444,34 @@ footer .foot-brand {
     padding: 20px 0;
     position: relative;
   }
+  #social {
+    display: none;
+  }
   #social li {
-    color: white;
+    /* color: white; */
+    margin: 0;
+  }
+  .services {
+    width: auto;
+    display: table;
+    margin: 45px auto;
+  }
+  .services .button {
+    width: 100%;
+  }
+  .services li {
+    margin: 0;
   }
   header .brand {
     font-size: 99%;
+    right: 0;
+    width: 100%;
     position: relative;
+  }
+  header .brand p { 
+    text-align: center;
+    width: 300px;
+    float: right;
   }
   .shadow-clone {
     display: none;
@@ -373,6 +485,7 @@ footer .foot-brand {
   }
   nav .main-menu li {
     text-align: center;
+    border: 2px solid #111;
     width: 100%;
     margin: 0;
   }
@@ -384,7 +497,7 @@ footer .foot-brand {
   footer .foot-brand { 
     font-size: 99%;
   }
-  #treaturight {
+  #treaturight, #muteToggle {
     display: none;
   }
 }
