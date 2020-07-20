@@ -474,13 +474,18 @@ iframe {
     width: 100%;
     position: relative;
   }
+  header .brand h1 {
+    white-space: nowrap;
+  }
   header .brand p { 
     text-align: center;
     width: 300px;
     float: right;
   }
   .shadow-clone {
-    display: none;
+    -webkit-transform: translate(3px, -45px) !important;
+    opacity: 0.3;
+    color: #6ea0c2;
   }
   nav .main-menu {
     width: auto;
