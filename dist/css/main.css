@@ -415,6 +415,7 @@ iframe {
   header {
     height: auto;
     padding-top: 120px !important;
+    box-shadow: inset 0px -183px 79px 23px #111;
     padding: 10px;
   }
   .youtube {
@@ -429,6 +430,20 @@ iframe {
   }
   header .book-me h1 {
     text-align: center;
+  }
+  header .brand {
+    font-size: 99%;
+    right: 0;
+    width: 100%;
+    position: relative;
+  }
+  header .brand h1 {
+    white-space: nowrap;
+  }
+  header .brand p { 
+    text-align: center;
+    width: 300px;
+    float: right;
   }
   .button-content {
     width: 80px;
@@ -468,20 +483,6 @@ iframe {
   }
   .services li {
     margin: 0;
-  }
-  header .brand {
-    font-size: 99%;
-    right: 0;
-    width: 100%;
-    position: relative;
-  }
-  header .brand h1 {
-    white-space: nowrap;
-  }
-  header .brand p { 
-    text-align: center;
-    width: 300px;
-    float: right;
   }
   .shadow-clone {
     -webkit-transform: translate(3px, -45px) !important;
