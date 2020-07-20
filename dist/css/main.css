@@ -429,6 +429,9 @@ iframe {
   header .book-me h1 {
     text-align: center;
   }
+  .button-content {
+    width: 80px;
+  }
   .outer-owl {
     width: auto;
   }
