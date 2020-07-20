@@ -354,6 +354,7 @@ iframe {
 
 .button-content {
   width: 77px;
+  height: 33px;
   display: block;
   margin: 0 auto;
 }
