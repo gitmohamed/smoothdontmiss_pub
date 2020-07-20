@@ -50,8 +50,7 @@ main {
 }
 
 header {
-  background: #00000059;
-  background-size: cover;
+  background: url('img/5.png') center no-repeat;
   padding: 80px 0;
   width: 100%;
   height: 100vh;
@@ -412,6 +411,7 @@ iframe {
   }
   header {
     height: auto;
+    padding-top: 120px !important;
     padding: 10px;
   }
   .youtube {
@@ -458,6 +458,7 @@ iframe {
   }
   .services .button {
     width: 100%;
+    display: inline-block;
   }
   .services li {
     margin: 0;
@@ -499,5 +500,8 @@ iframe {
   }
   #treaturight, #muteToggle {
     display: none;
+  }
+  .foot-menu ul li {
+    width: 22%;
   }
 }
