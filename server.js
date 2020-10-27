@@ -11,7 +11,7 @@ app.use(compression())
 app.use(express.static('./dist'))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/index.html`))
+  res.sendFile(path.join(`${__dirname}/choose.html`))
 }).listen(port, () => {
   console.log(`Listening on ${port}`)
 })
