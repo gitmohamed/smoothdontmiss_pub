@@ -13,7 +13,7 @@ $(window).on("load",function() {
             }
         });
         // console.log(Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0));
-        $(".action").css({"bottom": windowBottom/250 + 12 + "%", "opacity": Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0)});
+        $(".action").css({"bottom": windowBottom/80 + 12 + "%", "opacity": Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0)});
     }).scroll(); //invoke scroll-handler on page-load
     if ($(window).width() < 500) {
         $(".mobile-menu-btn").on("touch, click", function() {
