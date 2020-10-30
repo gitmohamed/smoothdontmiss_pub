@@ -105,6 +105,43 @@ main {
     width: 100%;
 }
 
+.after-fold #newsletter {
+    display: table;
+    z-index: 99;
+    width: 60%;
+    margin: 0 auto;
+    clear: both;
+    padding: 65px 0;
+}
+
+.after-fold #newsletter h3 {
+    font-size: 24px;
+    display: block;
+}
+
+.after-fold #newsletter input[type="email"] {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: inherit;
+    color: white;
+    margin: 10px auto;
+}
+
+.after-fold #newsletter input[type="submit"] {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    font-family: inherit;
+    color: white;
+    margin: 10px 5px;
+    cursor: pointer;
+}
+
+.after-fold #newsletter input[type="submit"]:hover {
+    text-decoration: underline;
+}
+
 .after-fold .media {
     display: table;
     z-index: 99;
@@ -201,6 +238,10 @@ main {
     margin: 0 auto;
     clear: both;
     padding: 65px 0;
+}
+
+.after-fold #credits a {
+    text-decoration: underline;
 }
 
 /* .action h2:hover {
@@ -371,7 +412,7 @@ main {
     .menu-outer ul {
         width: 95%;
     }
-    .after-fold #credits, .after-fold .media, .after-fold .social-section {
+    .after-fold #credits, .after-fold .media, .after-fold .social-section, .after-fold #newsletter {
         padding: 13px;
         width: 100%;
     }
@@ -387,5 +428,12 @@ main {
     .after-fold .social-section .posts li {
         width: 100%;
         margin: 0;
+    }
+    .footer-social {
+        width: 100%;
+    }
+    .footer-social ul li {
+        font-size: 22px;
+        margin-left: 5px;
     }
   }

@@ -12,6 +12,8 @@ app.use(express.static('./dist'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(`${__dirname}/choose.html`))
+}).get('/', (req, res) => {
+  console.log(req.body);
 }).listen(port, () => {
   console.log(`Listening on ${port}`)
 })

@@ -10,14 +10,17 @@ $(window).on("load",function() {
             posts.forEach(node => {
                 $(".social-loader").hide();
                 $(".social-section .posts").prepend("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
-                // if (node.node.is_video) {
-                // } else {
-
-                // }
             });
         }
     });
 
+    // $("nlForm").on("submit", function(data) {
+    //     $.ajax({
+    //         method: "POST",
+    //         url: "/newsletter",
+    //         data: 
+    //     })
+    // });
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $(".fade").each(function() {
