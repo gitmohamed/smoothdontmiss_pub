@@ -217,8 +217,21 @@ main {
     padding: 65px 0;
 }
 
-.after-fold .social-section .posts li {
+.after-fold .social-section .posts a {
+    display: inline-block;
     width: 33.3%;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.after-fold .social-section .posts li {
+    padding: 0;
+    border: 1px solid #1f1f1f;
+}
+
+
+.after-fold .social-section .posts li img {
+    display: block;
 }
 
 .after-fold .social-loader {
@@ -413,7 +426,7 @@ main {
         width: 95%;
     }
     .after-fold #credits, .after-fold .media, .after-fold .social-section, .after-fold #newsletter {
-        padding: 13px;
+        padding: 15px 0px;
         width: 100%;
     }
     .after-fold .media .image-title {
@@ -425,7 +438,7 @@ main {
         right: 0;
         display: block;
     }
-    .after-fold .social-section .posts li {
+    .after-fold .social-section .posts a {
         width: 100%;
         margin: 0;
     }

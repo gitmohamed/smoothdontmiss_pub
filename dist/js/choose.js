@@ -4,13 +4,20 @@ $(window).on("load",function() {
     }
     $.ajax({
         url: "https://www.instagram.com/explore/tags/smoothdontmiss/?__a=1", 
-        success: function(data){
+        success: function(data) {
             var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
-            console.log(data.graphql.hashtag);
-            posts.forEach(node => {
-                $(".social-loader").hide();
-                $(".social-section .posts").prepend("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
-            });
+            console.log(data.graphql.hashtag.edge_hashtag_to_media);
+            if (data.graphql.hashtag.edge_hashtag_to_media.count == 0) {
+                $(".social-section .posts").append("No Posts");
+            } else {
+                posts.forEach(node => {
+                    $(".social-loader").hide();
+                    $(".social-section .posts").prepend("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
+                });
+            }
+        },
+        error: function(err) {
+            console.log("An error occured", err);
         }
     });
 
