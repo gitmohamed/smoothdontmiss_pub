@@ -377,6 +377,7 @@ main {
 
   footer {
       background: #131313;
+      border-top: 2px solid #212121;
   }
 
   .footer-social {
@@ -390,7 +391,7 @@ main {
   }
 
   @media screen and (max-width: 700px) {
-    .after-fold .media {
+    .after-fold .media, .after-fold .social-section {
         width: 94%;
     }
     .after-fold h1 {
@@ -405,6 +406,9 @@ main {
         width: 330px;
         margin: 0 auto;
     }
+    .after-fold .social-section .posts a {
+        width: 50%;
+    }
     .menu-outer ul li {
         padding: 27px 3%;
         margin-left: 0;
@@ -416,6 +420,9 @@ main {
   }
   
   @media screen and (max-width: 500px) {
+    main {
+        background-size: auto 100%;   
+    }
     .menu-outer {
         display: none;
     }
