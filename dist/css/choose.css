@@ -10,8 +10,9 @@ img {
 }
 
 main {
-    background: url(../img/IMG_04100.jpg) no-repeat center center fixed;
-    min-height: 97vh;
+    background: url(../img/IMG_04100.jpg) no-repeat center center;
+    background-attachment: fixed;
+    height: 97vh;
     background-size: cover;
 }
 
@@ -419,6 +420,9 @@ main {
   }
   
   @media screen and (max-width: 500px) {
+      main {
+        background-attachment: scroll;
+      }
     .menu-outer {
         display: none;
     }
