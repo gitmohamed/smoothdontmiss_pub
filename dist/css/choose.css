@@ -10,8 +10,8 @@ img {
 }
 
 main {
-    height: 97vh;
-    background: url(../img/IMG_04100.jpg) center no-repeat;
+    background: url(../img/IMG_04100.jpg) no-repeat center center fixed;
+    min-height: 97vh;
     background-attachment: fixed;
     background-size: cover;
 }
