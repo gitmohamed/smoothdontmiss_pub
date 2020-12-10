@@ -5,8 +5,9 @@ $(window).on("load",function() {
     $.ajax({
         url: "https://www.instagram.com/explore/tags/smoothdontmiss/?__a=1", 
         success: function(data) {
-            var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
+            console.log(data);
             console.log(data.graphql.hashtag.edge_hashtag_to_media);
+            var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
             if (data.graphql.hashtag.edge_hashtag_to_media.count == 0) {
                 $(".social-section .posts").append("No Posts");
             } else {
