@@ -12,15 +12,22 @@ img {
 main {
     background: url(../img/IMG_04100.jpg) no-repeat center center;
     background-attachment: fixed;
-    height: 97vh;
+    /* height: 97vh; */
     background-size: cover;
+}
+
+main iframe {
+    display: block;
+    margin: 20px auto;
+    width: 82%;
+    height: 42.5vw;
 }
 
 .branding {
     display: block;
     margin: 0px auto;
     padding: 20px 0;
-    max-width: 200px;
+    max-width: 169px;
 }
 
 .branding img {
@@ -31,7 +38,7 @@ main {
 .menu-outer {
     width: 385px;
     display: block;
-    margin: 0 auto;
+    margin: 15px auto;
     z-index: 99;
 }
 
@@ -44,7 +51,7 @@ main {
     width: 99%;
     text-align: center;
     padding: 30px 0;
-    position: fixed;
+    /* position: fixed; */
     left: 0;
     bottom: 12%;
     z-index: 0;
@@ -76,7 +83,6 @@ main {
 
 .platforms {
     display: block;
-    position: absolute;
     bottom: 20px;
     left: 0;
     right: 0;
@@ -142,7 +148,7 @@ main {
     text-decoration: underline;
 }
 
-.after-fold .media {
+.media {
     display: table;
     z-index: 99;
     width: 60%;
@@ -151,7 +157,7 @@ main {
     padding: 65px 0;
 }
 
-.after-fold .media .image-title {
+.media .image-title {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
@@ -165,23 +171,23 @@ main {
     text-align: center;
 }
 
-.after-fold .media iframe {
+.media iframe {
     display: none;
 }
 
-.after-fold .media img:hover {
+.media img:hover {
     transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
     opacity: 0.7;
 }
 
-.after-fold .media .main-video {
+.media .main-video {
     display: block;
     width: 100%;
     position: relative;
 }
 
-.after-fold .media .main-video img {
+.media .main-video img {
     display: block;
     width: 100%;
     margin: 0 auto;
@@ -189,21 +195,21 @@ main {
     -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-.after-fold .media .other-videos {
+.media .other-videos {
     display: block;
     width: 50%;
     float: left;
     position: relative;
 }
 
-.after-fold .media .other-videos img {
+.media .other-videos img {
     width: 100%;
     float: left;
     transition: opacity 0.2s ease-in-out;
     -webkit-transition: opacity 0.2s ease-in-out;
 }
 
-.after-fold .media .other-videos iframe {
+.media .other-videos iframe {
     display: none;
     width: 100%;
 }
@@ -388,6 +394,12 @@ main {
 
   .footer-social ul li {
       font-size: 25px;
+  }
+
+  @media screen and (max-width: 1200px) { 
+    main iframe {
+        /* height: 50vh; */
+    }
   }
 
   @media screen and (max-width: 700px) {

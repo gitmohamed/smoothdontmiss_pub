@@ -12,7 +12,7 @@ $(window).on("load",function() {
             } else {
                 posts.forEach(node => {
                     $(".social-loader").hide();
-                    $(".social-section .posts").prepend("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
+                    $(".social-section .posts").append("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
                 });
             }
         },
@@ -42,14 +42,14 @@ $(window).on("load",function() {
             }
         });
         // console.log(Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0));
-        if($(window).width() > 700) {
-            $(".action").css({"bottom": windowBottom/80 + 12 + "%", "opacity": Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0)});
-        }
-        if ($(window).scrollTop() > 360) {
-            $(".action").hide();
-        } else {
-            $(".action").show();
-        }
+        // if($(window).width() > 700) {
+        //     $(".action").css({"bottom": windowBottom/80 + 12 + "%", "opacity": Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0)});
+        // }
+        // if ($(window).scrollTop() > 360) {
+        //     $(".action").hide();
+        // } else {
+        //     $(".action").show();
+        // }
     }).scroll(); //invoke scroll-handler on page-load
     if ($(window).width() < 500) {
         $(".mobile-menu-btn").on("touch, click", function() {
