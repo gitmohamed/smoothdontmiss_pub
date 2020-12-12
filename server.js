@@ -1,6 +1,7 @@
 const express = require('express');
 const path = require('path');
 const compression = require('compression');
+const fs = require('fs')
 // const request = require('request');
 // const tumblr = require('tumblr.js');
 
@@ -12,8 +13,17 @@ app.use(express.static('./dist'))
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(`${__dirname}/choose.html`))
-}).get('/', (req, res) => {
-  console.log(req.body);
+}).post('/newsletter', (req, res) => {
+  fs.appendFile('emails.txt', req.query.email + "\n", function (err) {
+    if (err) {
+      // append failed
+      res.send(err)
+    } else {
+      // done
+      res.send("Email saved")
+    }
+  })
+  console.log(req.query.email);
 }).listen(port, () => {
   console.log(`Listening on ${port}`)
 })

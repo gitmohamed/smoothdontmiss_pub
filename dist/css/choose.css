@@ -120,7 +120,16 @@ main iframe {
     padding: 65px 0;
 }
 
+.after-fold #newsletter .form-inputs {
+    display: inline-block;
+    width: 50%;
+    float: left;
+}
+
 .after-fold #newsletter h3 {
+    width: 50%;
+    float: left;
+    padding: 15px 0;
     font-size: 24px;
     display: block;
 }
@@ -132,6 +141,7 @@ main iframe {
     font-family: inherit;
     color: white;
     margin: 10px auto;
+    width: 60%;
 }
 
 .after-fold #newsletter input[type="submit"] {
@@ -142,6 +152,7 @@ main iframe {
     color: white;
     margin: 10px 5px;
     cursor: pointer;
+    width: 25%;
 }
 
 .after-fold #newsletter input[type="submit"]:hover {
@@ -154,7 +165,7 @@ main iframe {
     width: 60%;
     margin: 0 auto;
     clear: both;
-    padding: 65px 0;
+    padding: 35px 0;
 }
 
 .media .image-title {
@@ -235,7 +246,6 @@ main iframe {
     border: 1px solid #1f1f1f;
 }
 
-
 .after-fold .social-section .posts li img {
     display: block;
 }
@@ -248,6 +258,17 @@ main iframe {
     display: block;
     width: 20px;
     height: 20px;
+}
+
+.after-fold .about {
+    line-height: 1.4rem;
+    display: table;
+    z-index: 99;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    clear: both;
+    padding: 0;
 }
 
 .after-fold #credits {
@@ -400,6 +421,15 @@ main iframe {
     main iframe {
         /* height: 50vh; */
     }
+    .after-fold #newsletter .form-inputs { 
+        width: 100%;
+    }
+    .after-fold #newsletter h3 {
+        width: 100%;
+    }
+    .after-fold .about {
+        width: 88%;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -432,9 +462,9 @@ main iframe {
   }
   
   @media screen and (max-width: 500px) {
-      main {
+    main {
         background-attachment: scroll;
-      }
+    }
     .menu-outer {
         display: none;
     }
@@ -444,6 +474,7 @@ main iframe {
     .menu-outer ul {
         width: 95%;
     }
+    
     .after-fold #credits, .after-fold .media, .after-fold .social-section, .after-fold #newsletter {
         padding: 15px 0px;
         width: 100%;

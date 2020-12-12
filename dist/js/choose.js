@@ -60,4 +60,19 @@ $(window).on("load",function() {
             $(".menu-outer").removeClass("opened");
         });
     }
+    $('#newsletterSubmit').submit(function(e) {
+        $.ajax({
+            url: "/newsletter?email="+ $("#newsletterSubmit input")[0].value, 
+            method: "POST",
+            success: function(data) {
+                $("#newsletterSubmit input")[0].value = "";
+                $("#newsletterSubmit").append("<p style='color: green;text-align:right'>Thanks for subscribing!</p>")
+                console.log(data);
+            },
+            error: function(err) {
+                console.log("An error occured", err);
+            }
+        });
+        e.preventDefault();
+    })
 });
