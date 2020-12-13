@@ -131,7 +131,7 @@ main iframe {
     float: left;
     padding: 15px 0;
     font-size: 24px;
-    display: block;
+    display: block; 
 }
 
 .after-fold #newsletter input[type="email"] {
@@ -467,6 +467,7 @@ main iframe {
     }
     .menu-outer {
         display: none;
+        margin-top: 0;
     }
     .mobile-menu-btn {
         display: block;
