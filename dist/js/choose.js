@@ -66,7 +66,7 @@ $(window).on("load",function() {
             method: "POST",
             success: function(data) {
                 $("#newsletterSubmit input")[0].value = "";
-                $("#newsletterSubmit").append("<p style='color: green;text-align:right'>Thanks for subscribing!</p>")
+                $(".form-inputs").append("<p style='color: green;text-align:left'>Thanks for subscribing!</p>")
                 console.log(data);
             },
             error: function(err) {

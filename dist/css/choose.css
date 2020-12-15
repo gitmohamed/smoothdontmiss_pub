@@ -1,7 +1,6 @@
 body {
     margin: 0;
     background: #000;
-    padding: 25px;
     box-sizing: border-box;
 }
 
@@ -114,7 +113,7 @@ main iframe {
 .after-fold #newsletter {
     display: table;
     z-index: 99;
-    width: 60%;
+    width: 50%;
     margin: 0 auto;
     clear: both;
     padding: 65px 0;
@@ -129,9 +128,10 @@ main iframe {
 .after-fold #newsletter h3 {
     width: 50%;
     float: left;
-    padding: 15px 0;
+    padding: 15px 10px;
     font-size: 24px;
     display: block; 
+    text-align: center;
 }
 
 .after-fold #newsletter input[type="email"] {
@@ -244,10 +244,13 @@ main iframe {
 .after-fold .social-section .posts li {
     padding: 0;
     border: 1px solid #1f1f1f;
+    width: 100%;
+    margin: 0;
 }
 
 .after-fold .social-section .posts li img {
     display: block;
+    width: 100%;
 }
 
 .after-fold .social-loader {
@@ -266,7 +269,7 @@ main iframe {
     z-index: 99;
     width: 50%;
     text-align: center;
-    margin: 0 auto;
+    margin: 45px auto;
     clear: both;
     padding: 0;
 }
@@ -429,6 +432,8 @@ main iframe {
         width: 100%;
     }
     .after-fold #newsletter h3 {
+        text-align: left;
+        padding: 15px 0;
         width: 100%;
     }
     .after-fold .about {
@@ -437,12 +442,6 @@ main iframe {
   }
 
   @media screen and (max-width: 700px) {
-    .after-fold .media, .after-fold .social-section {
-        width: 94%;
-    }
-    .after-fold h1 {
-        font-size: 23px;
-    }
     .menu-outer {
         width: auto;
     }
@@ -451,6 +450,15 @@ main iframe {
         display: flex;
         width: 330px;
         margin: 0 auto;
+    }
+    .after-fold #newsletter {
+        width: 62%;
+    }
+    .after-fold .media, .after-fold .social-section {
+        width: 94%;
+    }
+    .after-fold h1 {
+        font-size: 23px;
     }
     .after-fold .social-section .posts a {
         width: 50%;
@@ -478,6 +486,9 @@ main iframe {
     }
     .menu-outer ul {
         width: 95%;
+    }
+    .after-fold {
+        padding: 0 20px;
     }
     
     .after-fold #credits, .after-fold .media, .after-fold .social-section, .after-fold #newsletter {
