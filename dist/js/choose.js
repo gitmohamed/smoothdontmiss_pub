@@ -5,8 +5,6 @@ $(window).on("load",function() {
     $.ajax({
         url: "https://www.instagram.com/explore/tags/smoothdontmiss/?__a=1", 
         success: function(data) {
-            console.log(data);
-            console.log(data.graphql.hashtag.edge_hashtag_to_media);
             var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
             if (data.graphql.hashtag.edge_hashtag_to_media.count == 0) {
                 $(".social-section .posts").append("No Posts");
@@ -21,14 +19,6 @@ $(window).on("load",function() {
             console.log("An error occured", err);
         }
     });
-
-    // $("nlForm").on("submit", function(data) {
-    //     $.ajax({
-    //         method: "POST",
-    //         url: "/newsletter",
-    //         data: 
-    //     })
-    // });
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $(".fade").each(function() {
@@ -54,10 +44,14 @@ $(window).on("load",function() {
     }).scroll(); //invoke scroll-handler on page-load
     if ($(window).width() < 500) {
         $(".mobile-menu-btn").on("touch, click", function() {
-            $(".menu-outer").toggleClass("opened");
+            if($(".menu-outer").css("display") === 'none') {
+                $(".menu-outer").fadeIn(250);
+            } else {
+                $(".menu-outer").fadeOut(250);
+            }
         });
         $(".menu-outer li").on("touch, click", function() {
-            $(".menu-outer").removeClass("opened");
+            $(".menu-outer").fadeOut(200);
         });
     }
     $('#newsletterSubmit').submit(function(e) {

@@ -291,6 +291,31 @@ main iframe {
     text-decoration: underline;
 }
 
+.after-fold #buynow { 
+    line-height: 1.4rem;
+    display: table;
+    z-index: 99;
+    width: 50%;
+    text-align: center;
+    margin: 45px auto;
+    clear: both;
+    padding: 0;
+}
+
+.after-fold #buynow a {
+    border: none;
+    text-decoration: none;
+    margin: 0 auto;
+    display: block;
+    width: 160px;
+    transition: all 0.3s ease-in-out;
+}
+
+.after-fold #buynow a:hover {
+    transition: all 0.3s ease-in-out;
+    transform: translateY(-2px);
+}
+
 /* .action h2:hover {
     transform: translateY(-3px);
 } */
@@ -376,6 +401,7 @@ main iframe {
       left: 0;
       top: 50px;
       position: fixed;
+      cursor: pointer;
       z-index: 101;
   }
 
@@ -480,12 +506,25 @@ main iframe {
     .menu-outer {
         display: none;
         margin-top: 0;
+        background: #111;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100vh;
+        padding: 14vh 0;
+        z-index: 100;
     }
     .mobile-menu-btn {
         display: block;
     }
     .menu-outer ul {
         width: 95%;
+        display: table !important;
+        height: 100%;
+    }
+    .menu-outer ul li {
+        width: 100%;
     }
     .after-fold {
         padding: 0 20px;
