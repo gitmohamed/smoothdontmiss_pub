@@ -45,12 +45,24 @@ $(window).on("load",function() {
     if ($(window).width() < 500) {
         $(".mobile-menu-btn").on("touch, click", function() {
             if($(".menu-outer").css("display") === 'none') {
+                $('.mobile-menu-btn').css("background", "#111");
+                $('.mobile-menu-btn').children()[0].style.transform = "translateY(15px) rotate(45deg)";
+                $('.mobile-menu-btn').children()[1].style.opacity = "0";
+                $('.mobile-menu-btn').children()[2].style.transform = "translateY(-9px) rotate(-45deg)";
                 $(".menu-outer").fadeIn(250);
             } else {
+                $('.mobile-menu-btn').css("background", "#000");
+                $('.mobile-menu-btn').children()[0].style.transform = "translateY(0) rotate(0)";
+                $('.mobile-menu-btn').children()[1].style.opacity = "1";
+                $('.mobile-menu-btn').children()[2].style.transform = "translateY(0) rotate(0)";
                 $(".menu-outer").fadeOut(250);
             }
         });
         $(".menu-outer li").on("touch, click", function() {
+            $('.mobile-menu-btn').css("background", "#000");
+            $('.mobile-menu-btn').children()[0].style.transform = "translateY(0) rotate(0)";
+            $('.mobile-menu-btn').children()[1].style.opacity = "1";
+            $('.mobile-menu-btn').children()[2].style.transform = "translateY(0) rotate(0)";
             $(".menu-outer").fadeOut(200);
         });
     }
