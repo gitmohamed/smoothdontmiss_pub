@@ -194,6 +194,7 @@ main iframe {
 .media .image-title small {
     font-size: 19px;
     display: inline-block;
+    width: 100%;
 }
 .media iframe {
     display: none;
@@ -496,7 +497,7 @@ main iframe {
     }
     .after-fold .media, .after-fold .social-section {
         width: 94%;
-        /* background: white; */
+        background: transparent;
     }
     .after-fold h1 {
         font-size: 23px;
