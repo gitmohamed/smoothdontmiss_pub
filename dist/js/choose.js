@@ -27,9 +27,9 @@ $(window).on("load",function() {
             
             /* If the element is completely within bounds of the window, fade it in */
             if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-                if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+                if ($(this).css("opacity")==0) {$(this).fadeTo(200,1);}
             } else { //object goes out of view (scrolling up)
-                if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+                if ($(this).css("opacity")==1) {$(this).fadeTo(200,0);}
             }
         });
         // console.log(Math.max((Math.min(1 - $(window).scrollTop()*0.004 + 0.1, 1)), 0));
