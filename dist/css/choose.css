@@ -306,7 +306,7 @@ main iframe {
     text-decoration: underline;
 }
 
-.after-fold #social { 
+.after-fold #socialarea { 
     line-height: 1.4rem;
     display: table;
     z-index: 99;
@@ -317,7 +317,7 @@ main iframe {
     padding: 0;
 }
 
-.after-fold #social a {
+.after-fold #socialarea a {
     border: none;
     text-decoration: none;
     margin: 0 auto;
@@ -326,7 +326,7 @@ main iframe {
     transition: all 0.3s ease-in-out;
 }
 
-.after-fold #social a:hover {
+.after-fold #socialarea a:hover {
     transition: all 0.3s ease-in-out;
     transform: translateY(-2px);
 }
