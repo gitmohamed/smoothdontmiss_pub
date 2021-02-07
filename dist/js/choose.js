@@ -11,7 +11,7 @@ $(window).on("load",function() {
             } else {
                 posts.forEach(node => {
                     $(".social-loader").hide();
-                    $(".social-section .posts").append("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
+                    $(".social-section .posts").append("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img loading=lazy src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
                 });
             }
         },

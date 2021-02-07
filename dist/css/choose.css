@@ -171,17 +171,30 @@ main iframe {
 .media .image-title {
     position: absolute;
     margin-left: auto;
+    padding-left: 30px;
     margin-right: auto;
     display: block;
     pointer-events: none;
     font-size: 26px;
     letter-spacing: 1px;
-    top: 45%;
+    top: 18%;
     clear: both;
     width: 100%;
-    text-align: center;
 }
-
+.media .image-title h2 {
+    display: inline-block;
+}
+.media .image-title p {
+    font-size: 16px;
+    margin: 0;
+}
+.media .image-title span {
+    font-size: 19px;
+}
+.media .image-title small {
+    font-size: 19px;
+    display: inline-block;
+}
 .media iframe {
     display: none;
 }
@@ -228,22 +241,23 @@ main iframe {
 .after-fold .social-section {
     display: table;
     z-index: 99;
+    background: #043234;
     width: 60%;
     margin: 0 auto;
     clear: both;
-    padding: 65px 0;
+    padding: 65px 90px;
 }
 
 .after-fold .social-section .posts a {
     display: inline-block;
     width: 33.3%;
-    padding: 0;
-    margin-top: 10px;
+    padding: 0 5px;
+    margin: 4px 0px;
 }
 
 .after-fold .social-section .posts li {
     padding: 0;
-    border: 1px solid #1f1f1f;
+    border: 1px solid #ffffff47;
     width: 100%;
     margin: 0;
 }
@@ -482,6 +496,7 @@ main iframe {
     }
     .after-fold .media, .after-fold .social-section {
         width: 94%;
+        /* background: white; */
     }
     .after-fold h1 {
         font-size: 23px;
@@ -496,6 +511,12 @@ main iframe {
     .action {
         position: relative;
         bottom: 0;
+    }
+    .media .other-videos {
+        width: 100%;
+    }
+    .media .image-title h2 {
+        font-size: 30px;
     }
   }
   
