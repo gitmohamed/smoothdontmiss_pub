@@ -18,8 +18,8 @@ main {
 main iframe {
     display: block;
     margin: 20px auto;
-    width: 82%;
-    height: 42.5vw;
+    width: 67%;
+    height: 34.5vw;
 }
 
 .branding {
@@ -520,6 +520,9 @@ main iframe {
     .media .other-videos {
         width: 100%;
     }
+    .media .image-title {
+        padding-left: 0px;
+    }
     .media .image-title h2 {
         font-size: 30px;
     }
@@ -563,7 +566,7 @@ main iframe {
     .after-fold .media .image-title {
         letter-spacing: 1px;
         font-size: 10px;
-        width: 76%;
+        width: 90%;
         margin: 0 auto;
         left: 0;
         right: 0;
