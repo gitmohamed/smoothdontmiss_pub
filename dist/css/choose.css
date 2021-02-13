@@ -289,6 +289,13 @@ main iframe {
     padding: 0;
 }
 
+.after-fold .about p {
+    color: #c3c3c3;
+    font-size: 19px;
+    font-weight: 200;
+    line-height: 1.6rem;
+}
+
 .after-fold .about small a {
     text-decoration: underline;
 }
