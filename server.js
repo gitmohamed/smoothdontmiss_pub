@@ -9,6 +9,12 @@ const app = express()
 const port = process.env.PORT || 7777
 
 app.use(compression())
+
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  next();
+});
+
 app.use(express.static('./dist'))
 
 app.get('/', (req, res) => {
