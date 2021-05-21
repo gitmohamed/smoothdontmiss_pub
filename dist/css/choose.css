@@ -15,10 +15,11 @@ main {
     background-size: cover;
 }
 
-main iframe {
+.after-fold iframe {
     display: block;
     margin: 20px auto;
     width: 67%;
+    max-width: 800px;
     height: 34.5vw;
 }
 
