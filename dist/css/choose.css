@@ -36,7 +36,7 @@ main {
 }
 
 .menu-outer {
-    width: 385px;
+    width: 480px;
     display: block;
     margin: 15px auto;
     z-index: 99;
@@ -118,6 +118,10 @@ main {
     margin: 0 auto;
     clear: both;
     padding: 65px 0;
+}
+
+.social-section {
+    display: none;
 }
 
 .after-fold #newsletter .form-inputs {
