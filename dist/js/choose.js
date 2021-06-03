@@ -68,14 +68,13 @@ $(window).on("load",function() {
     }
     $('#newsletterSubmit').submit(function(e) {
         $.ajax({
-            url: `/rsvp?email=${$("#newsletterSubmit input")[0].value}&first=${$("#newsletterSubmit input")[1].value}&last=${$("#newsletterSubmit input")[2].value}&number=${$("#newsletterSubmit input")[3].value}`, 
+            url: `/rsvp?email=${$("#newsletterSubmit input")[0].value}&first=${$("#newsletterSubmit input")[1].value}&last=${$("#newsletterSubmit input")[2].value}&number=${$("#newsletterSubmit input")[3].value}&guests=${$("#newsletterSubmit input")[4].value}`, 
             method: "POST",
             success: function(data) {
-                $("#newsletterSubmit input")[0].value = "";
-                $("#newsletterSubmit input")[1].value = "";
-                $("#newsletterSubmit input")[2].value = "";
-                $("#newsletterSubmit input")[3].value = "";
-                $(".form-inputs").append("<p style='color: white;text-align:center'>You have RSVPed ✔️</p>")
+                $("#newsletterSubmit > small").css('display', 'none');
+                $("#newsletterSubmit h3").css("display", "none");
+                $("#newsletterSubmit input").css("display", "none");
+                $(".form-inputs").append("<div style='text-align:center;text-shadow: 2px 2px #000;'><p>Thank You! You have RSVP'd for an Upcoming Event.</p><p>Location will sent 9am June 11 2021</p></div>")
                 console.log(data);
             },
             error: function(err) {
