@@ -151,6 +151,8 @@ main {
     padding: 10px;
     font-family: inherit;
     color: inherit;
+    -webkit-appearance: none;
+    appearance: none;
     margin: 10px auto;
     width: 100%;
 }
