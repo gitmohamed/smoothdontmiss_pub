@@ -2,23 +2,23 @@ $(window).on("load",function() {
     if($(".social-section .posts").children().length == 0) {
         $(".social-loader").show();
     }
-    $.ajax({
-        url: "https://www.instagram.com/explore/tags/smoothdontmiss/?__a=1", 
-        success: function(data) {
-            var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
-            if (data.graphql.hashtag.edge_hashtag_to_media.count == 0) {
-                $(".social-section .posts").append("No Posts");
-            } else {
-                posts.forEach(node => {
-                    $(".social-loader").hide();
-                    $(".social-section .posts").append("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img loading=lazy src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
-                });
-            }
-        },
-        error: function(err) {
-            console.log("An error occured", err);
-        }
-    });
+    // $.ajax({
+    //     url: "https://www.instagram.com/explore/tags/smoothdontmiss/?__a=1", 
+    //     success: function(data) {
+    //         var posts = data.graphql.hashtag.edge_hashtag_to_media.edges;
+    //         if (data.graphql.hashtag.edge_hashtag_to_media.count == 0) {
+    //             $(".social-section .posts").append("No Posts");
+    //         } else {
+    //             posts.forEach(node => {
+    //                 $(".social-loader").hide();
+    //                 $(".social-section .posts").append("<a href='https://www.instagram.com/p/" + node.node.shortcode + "' target='_blank'><li><img loading=lazy src=" + node.node.thumbnail_src + " alt='instagram' /></li></a>");
+    //             });
+    //         }
+    //     },
+    //     error: function(err) {
+    //         console.log("An error occured", err);
+    //     }
+    // });
     $(window).scroll(function() {
         var windowBottom = $(this).scrollTop() + $(this).innerHeight();
         $(".fade").each(function() {
@@ -68,11 +68,14 @@ $(window).on("load",function() {
     }
     $('#newsletterSubmit').submit(function(e) {
         $.ajax({
-            url: "/newsletter?email="+ $("#newsletterSubmit input")[0].value, 
+            url: `/rsvp?email=${$("#newsletterSubmit input")[0].value}&first=${$("#newsletterSubmit input")[1].value}&last=${$("#newsletterSubmit input")[2].value}&number=${$("#newsletterSubmit input")[3].value}`, 
             method: "POST",
             success: function(data) {
                 $("#newsletterSubmit input")[0].value = "";
-                $(".form-inputs").append("<p style='color: green;text-align:left'>Thanks for subscribing!</p>")
+                $("#newsletterSubmit input")[1].value = "";
+                $("#newsletterSubmit input")[2].value = "";
+                $("#newsletterSubmit input")[3].value = "";
+                $(".form-inputs").append("<p style='color: white;text-align:center'>You have RSVPed ✔️</p>")
                 console.log(data);
             },
             error: function(err) {

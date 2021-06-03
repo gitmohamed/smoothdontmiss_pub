@@ -114,42 +114,52 @@ main {
 .after-fold #newsletter {
     display: table;
     z-index: 99;
-    width: 50%;
-    margin: 0 auto;
+    margin: 50px auto;
+    border: 5px solid white;
     clear: both;
-    padding: 65px 0;
-}
-
-.social-section {
-    display: none;
+    background-image: url(/img/IMG_1900.jpg);
+    background-size: cover;
+    padding-top: 18vh;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .after-fold #newsletter .form-inputs {
     display: inline-block;
-    width: 50%;
+    width: 100%;
     float: left;
 }
 
 .after-fold #newsletter h3 {
-    width: 50%;
     float: left;
     padding: 15px 10px;
+    text-shadow: 1px 2px black;
     font-size: 24px;
     display: block; 
     text-align: center;
 }
 
-.after-fold #newsletter input[type="email"] {
-    background: transparent;
-    border: 2px solid white;
-    padding: 10px;
-    font-family: inherit;
-    color: white;
-    margin: 10px auto;
-    width: 60%;
+.after-fold #newsletter small {
+    font-weight: 500;
+    text-shadow: 1px 2px black;
 }
 
-.after-fold #newsletter input[type="submit"] {
+.after-fold #newsletter input {
+    background: #131313d6;
+    border: 1px solid white;
+    padding: 10px;
+    font-family: inherit;
+    color: inherit;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.after-fold #newsletter input::placeholder {
+    color: whitesmoke;
+}
+
+.after-fold #newsletter input[type="submit"], .after-fold #newsletter input[type="reset"] {
     background: transparent;
     border: 2px solid white;
     padding: 10px;
@@ -158,6 +168,15 @@ main {
     margin: 10px 5px;
     cursor: pointer;
     width: 25%;
+}
+
+.after-fold #newsletter input[type="reset"] {
+
+}
+
+.after-fold #newsletter input[type="submit"] {
+    background: white;
+    color: #111;
 }
 
 .after-fold #newsletter input[type="submit"]:hover {
@@ -247,6 +266,7 @@ main {
 .after-fold .social-section {
     display: table;
     z-index: 99;
+    display: none;
     background: #043234;
     width: 60%;
     margin: 0 auto;
@@ -283,7 +303,7 @@ main {
     height: 20px;
 }
 
-.after-fold .about {
+.after-fold .about, .after-fold #events {
     line-height: 1.4rem;
     display: table;
     z-index: 99;
@@ -292,6 +312,10 @@ main {
     margin: 45px auto;
     clear: both;
     padding: 0;
+}
+
+.after-fold #newsletter {
+    text-align: left;
 }
 
 .after-fold .about p {
@@ -493,8 +517,8 @@ main {
         padding: 15px 0;
         width: 100%;
     }
-    .after-fold .about {
-        width: 88%;
+    .after-fold .about, .after-fold #events {
+        width: 98%;
     }
   }
 
@@ -509,7 +533,7 @@ main {
         margin: 0 auto;
     }
     .after-fold #newsletter {
-        width: 62%;
+        width: 92%;
     }
     .after-fold .media, .after-fold .social-section {
         width: 94%;
@@ -571,9 +595,15 @@ main {
         padding: 0 20px;
     }
     
-    .after-fold #credits, .after-fold .media, .after-fold .social-section, .after-fold #newsletter {
-        padding: 15px 0px;
+    .after-fold #credits, .after-fold .social-section, .after-fold #newsletter {
+        padding-top: 10vh;
+        padding-bottom: 8px;
+        padding-left: 15px;
+        padding-right: 15px;
         width: 100%;
+    }
+    .after-fold #newsletter input[type="submit"], .after-fold #newsletter input[type="reset"] {
+        width: auto;
     }
     .after-fold .media .image-title {
         letter-spacing: 1px;
