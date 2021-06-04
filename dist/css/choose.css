@@ -36,7 +36,7 @@ main {
 }
 
 .menu-outer {
-    width: 480px;
+    width: 388px;
     display: block;
     margin: 15px auto;
     z-index: 99;
@@ -111,10 +111,14 @@ main {
     width: 100%;
 }
 
+.after-fold h1 {
+    margin: 83px auto;
+}
+
 .after-fold #newsletter {
     display: table;
     z-index: 99;
-    margin: 50px auto;
+    margin: 0px auto;
     border: 5px solid white;
     clear: both;
     background-image: url(/img/IMG_1900.jpg);
@@ -123,6 +127,10 @@ main {
     padding-bottom: 60px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.after-fold #newsletter #newsletterSubmit {
+    display: table;
 }
 
 .after-fold #newsletter .form-inputs {
@@ -311,7 +319,7 @@ main {
     z-index: 99;
     width: 50%;
     text-align: center;
-    margin: 45px auto;
+    margin: 0px auto;
     clear: both;
     padding: 0;
 }
@@ -325,6 +333,7 @@ main {
     font-size: 19px;
     font-weight: 200;
     line-height: 1.6rem;
+    margin: 0;
 }
 
 .after-fold .about small a {
@@ -511,6 +520,9 @@ main {
     main iframe {
         /* height: 50vh; */
     }
+  }
+
+  @media screen and (max-width: 1000px) { 
     .after-fold #newsletter .form-inputs { 
         width: 100%;
     }
