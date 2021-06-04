@@ -560,8 +560,8 @@ main {
         width: 50%;
     }
     .menu-outer ul li {
-        padding: 27px 3%;
-        margin-left: 0;
+        padding: 27px 0%;
+        margin-left: 26px;
     }
     .action {
         position: relative;
