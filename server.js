@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
     // m.white@student.hathaway.edu,Maya,White,(555) 555-5555
     // b.mwangi@hathaway.edu,Benjamin,Mwangi,(555) 222-3333
     // e.nemec@hathaway.edu,Elizabeth,Nemec,(555) 111-4444
-  fs.appendFile('rsvp.csv', `${req.query.email},${req.query.first},${req.query.last},${req.query.number || "555-5555"},${req.query.guests}\n`, function (err) {
+  fs.appendFile('rsvp.csv', `${req.query.email},${req.query.first},${req.query.last},${req.query.number || "555-5555"},${req.query.guests || 0}\n`, function (err) {
     if (err) {
       // append failed
       res.send(err)
