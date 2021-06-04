@@ -543,7 +543,7 @@ main {
     .menu-outer ul {
         flex: 1 0 11.5%;
         display: flex;
-        width: 330px;
+        width: 380px;
         margin: 0 auto;
     }
     .after-fold #newsletter {
