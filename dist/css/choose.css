@@ -9,7 +9,7 @@ img {
 }
 
 main {
-    background: url(../img/p.png) no-repeat top center;
+    background: url(../img/p-min.png) no-repeat top center;
     background-attachment: fixed;
     /* height: 97vh; */
     background-size: contain;
