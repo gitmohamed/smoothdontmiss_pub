@@ -585,7 +585,7 @@ main {
     }
     .action {
         position: relative;
-        bottom: -69vw;
+        bottom: -55vw;
     }
     .media {
         grid-template-columns: 1fr;

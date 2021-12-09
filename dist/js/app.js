@@ -16,13 +16,6 @@ $(document).ready(function(){
     transitionStyle: 'fade'
   });
 
-  var scrollHandler = function(e) {
-    var top = $(window).scrollTop();
-    $('#treaturight').css({'filter': 'blur(' + top/10 + 'px' + ')'});
-  }
-
-  $(window).scroll(scrollHandler);
-
   $('#muteToggle').on('click', (e) => {
     var video = document.getElementById("treaturight");
     video.muted = !video.muted;
