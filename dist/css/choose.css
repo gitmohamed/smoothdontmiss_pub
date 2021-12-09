@@ -9,10 +9,11 @@ img {
 }
 
 main {
-    background: url(../img/herebefore.jpg) no-repeat top center;
+    background: url(../img/herebefore-min.jpg) no-repeat top center;
     /* background-attachment: fixed; */
-    /* height: 97vh; */
-    background-size: cover;
+    height: 86vh;
+    background-size: contain;
+    position: relative;
 }
 
 .after-fold iframe {
@@ -51,9 +52,9 @@ main {
     width: 100%;
     text-align: center;
     padding: 30px 0;
-    /* position: fixed; */
+    position: absolute;
     left: 0;
-    bottom: 12%;
+    bottom: 31%;
     z-index: 0;
     text-transform: uppercase;
 }
@@ -92,8 +93,9 @@ main {
 
 .platforms {
     display: block;
-    bottom: 20px;
+    bottom: 183px;
     left: 0;
+    position: absolute;
     right: 0;
     margin: 0 auto;
     padding: 10px;
@@ -583,7 +585,7 @@ main {
     }
     .action {
         position: relative;
-        bottom: 0;
+        bottom: -69vw;
     }
     .media {
         grid-template-columns: 1fr;
@@ -597,6 +599,9 @@ main {
     }
     .media .image-title h2 {
         font-size: 30px;
+    }
+    .platforms {
+        bottom: 27px;
     }
   }
   
