@@ -45,6 +45,7 @@ main {
 
 .menu-outer ul li {
     text-transform: uppercase;
+    text-shadow: 1px 2px 5px #000000;
 }
 
 .action {
