@@ -619,7 +619,7 @@ main {
         left: 0;
         width: 100% !important;
         height: 100vh;
-        padding: 14vh 0;
+        padding: 17vh 0;    
         z-index: 100;
     }
     .mobile-menu-btn {
