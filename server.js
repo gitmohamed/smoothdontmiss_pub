@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 app.use(express.static('./dist'))
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/choose.html`))
+  res.sendFile(path.join(`${__dirname}/index.html`))
 }).post('/rsvp', (req, res) => {
     // Email Address,First Name,Last Name,Address,Phone,What do you like to grow?,Tags,Birthday
     // m.white@student.hathaway.edu,Maya,White,(555) 555-5555
