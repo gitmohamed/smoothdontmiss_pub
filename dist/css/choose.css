@@ -485,7 +485,7 @@ main {
   }
 
   .mobile-menu-btn li {
-      transition: all 0.3s ease-in-out;
+      transition: all 0.3s cubic-bezier(0.48, 0.29, 0.37, 1.74);
   }
 
   .opened {
