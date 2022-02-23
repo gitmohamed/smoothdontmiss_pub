@@ -334,7 +334,7 @@ main {
     line-height: 1.4rem;
     display: table;
     z-index: 99;
-    width: 60%;
+    width: 50%;
     text-align: center;
     margin: 0px auto;
     clear: both;
@@ -549,7 +549,7 @@ main {
         width: 100%;
     }
     .after-fold .about, .after-fold #events {
-        width: 98%;
+        width: 90%;
     }
     .media .image-title {
         font-size: 19px;
