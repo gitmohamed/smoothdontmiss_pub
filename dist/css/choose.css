@@ -586,7 +586,7 @@ main {
     }
     .action {
         position: relative;
-        bottom: -33vw;
+        bottom: -15vw;
     }
     .media {
         grid-template-columns: 1fr;
@@ -603,12 +603,14 @@ main {
     }
     .platforms {
         bottom: 27px;
+        margin: 0 auto;
     }
   }
   
   @media screen and (max-width: 500px) {
     main {
         background-attachment: scroll;
+        height: 550px;
     }
     .menu-outer {
         display: none;
@@ -634,7 +636,7 @@ main {
         width: 100%;
     }
     .after-fold {
-        padding: 0 20px;
+        width: 100%;
     }
     
     .after-fold #credits, .after-fold .social-section, .after-fold #newsletter {
