@@ -551,6 +551,9 @@ main {
     .after-fold .about, .after-fold #events {
         width: 90%;
     }
+    .media { 
+        width: 80%;   
+    }
     .media .image-title {
         font-size: 19px;
     }
