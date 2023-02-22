@@ -42,7 +42,7 @@ main {
 
 .menu-outer ul li {
     text-transform: uppercase;
-    text-shadow: 1px 2px 5px #892e2e;
+    text-shadow: 1px 2px 5px #000;
 }
 
 .action {
@@ -558,6 +558,9 @@ main {
   }
 
   @media screen and (max-width: 700px) {
+    .action h1 {
+        font-size: 40px;
+    }
     .menu-outer {
         width: auto;
     }
