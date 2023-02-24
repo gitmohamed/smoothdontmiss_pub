@@ -147,7 +147,7 @@
     line-height: 1.5;
     min-height: 100vh;
     min-width: 250px;
-    background-image: url("../images/poster-1.jpg");
+    background-image: url("../img/IMG_6734.jpg");
     background-size: 150%;
     background-repeat: no-repeat;
     background-position: top;
@@ -640,6 +640,7 @@
     .overlay { display: none; }
   
     .playlist {
+        display: none;
       position: static;
       visibility: visible;
       border-radius: 0;
